@@ -1,0 +1,99 @@
+.glow-text {
+  text-shadow: none;
+  color: #f8fafc;
+}
+
+* {
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+}
+
+button {
+  position: relative;
+  overflow: visible;
+}
+
+button::before {
+  display: none;
+}
+
+.border-cyan-400\/30,
+.border-cyan-400\/40,
+.border-purple-400\/20,
+.border-cyan-400\/10,
+.border-purple-400\/30 {
+  border-color: rgba(148, 163, 184, 0.16) !important;
+  box-shadow: none !important;
+}
+
+.ring-cyan-400\/20,
+.ring-cyan-400\/50 {
+  box-shadow: none !important;
+}
+
+a[class*="from-cyan"],
+button[class*="from-cyan"],
+button[class*="bg-cyan-400"],
+button[class*="bg-gradient-to-r"] {
+  box-shadow: none !important;
+}
+
+.bg-linear-to-br,
+.bg-gradient-to-br {
+  background: rgba(15, 23, 42, 0.95) !important;
+}
+
+.bg-linear-to-r,
+.bg-gradient-to-r {
+  background: rgba(30, 41, 59, 0.98) !important;
+}
+
+.shadow-2xl,
+.shadow-lg,
+.shadow-cyan-500\/10,
+.shadow-cyan-500\/20,
+.shadow-purple-500\/10,
+.shadow-cyan-500\/50,
+.shadow-purple-500\/30 {
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.18) !important;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.12) !important;
+  border-color: rgba(56, 189, 248, 0.5) !important;
+}
+
+button:hover,
+button:focus {
+  opacity: 0.96;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(15, 23, 42, 0.7);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(56, 189, 248, 0.4);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(56, 189, 248, 0.5);
+}
+
+::selection {
+  background: rgba(56, 189, 248, 0.18);
+  color: #f8fafc;
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+}
